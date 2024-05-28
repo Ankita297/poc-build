@@ -17,7 +17,7 @@ jobs:
 
       - name: checkout repository
         uses: actions/checkout@v3
-        
+
       - name: Change directory to iOS
         run: cd ios
 
@@ -52,7 +52,7 @@ jobs:
 
       - name: build archive
         run: |
-          xcodebuild build  -workspace PocBuild.xcworkspace -scheme "PocBuild" \
+          xcodebuild -scheme "PocBuild" \
           -archivePath $RUNNER_TEMP/pocbuild.xcarchive \
           -sdk iphoneos \
           -configuration Debug \
