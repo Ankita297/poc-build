@@ -50,7 +50,7 @@ jobs:
       - name: build archive
         run: |
           xcodebuild -scheme "PocBuild" \
-          -archivePath $RUNNER_TEMP/pocbuild.xcarchive \
+          -archivePath ios/build/pocbuild.xcarchive \
           -sdk iphoneos \
           -configuration Debug \
           -destination generic/platform=iOS \
