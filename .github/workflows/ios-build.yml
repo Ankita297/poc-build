@@ -51,7 +51,6 @@ jobs:
       - name: Install CocoaPods
         run: |
           cd ios
-          gem install cocoapods
           pod install
           cd..
 
