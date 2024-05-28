@@ -49,8 +49,8 @@ jobs:
 
       - name: build archive
         run: |
-          xcodebuild -scheme "PocBuild" \
-          -archivePath $RUNNER_TEMP/iamgroot.xcarchive \
+          xcodebuild -workspace PocBuild.xcworkspace -scheme "PocBuild" \
+          -archivePath $RUNNER_TEMP/pocbuild.xcarchive \
           -sdk iphoneos \
           -configuration Debug \
           -destination generic/platform=iOS \
