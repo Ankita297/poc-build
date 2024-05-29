@@ -65,7 +65,7 @@ jobs:
       - name: build archive
         run: |
           cd ios
-          xcodebuild -scheme "PocBuild" \
+          xcodebuild  -scheme "PocBuild" \
           -archivePath ios/build/pocbuild.xcarchive \
           -sdk iphoneos \
           -configuration Debug \
